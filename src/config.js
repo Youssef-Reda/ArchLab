@@ -49,22 +49,22 @@ export const STAGES = {
     options: [
       { 
         id: 'continuous', 
-        name: 'Continuous Wave (CW)', 
+        name: 'Continuous Mode', 
         specs: { dutyCycle: 1.0, samplingRate: 'High' }, 
         desc: 'LED is always ON. Highest signal fidelity, but drains battery rapidly.' 
       },
       { 
         id: 'pulsed_100hz', 
-        name: 'Pulsed (100Hz)', 
+        name: 'Pulsed Mode', 
         specs: { dutyCycle: 0.1, samplingRate: 'Med' }, 
         desc: 'Flashes LED to save power. Good compromise for daily tracking.' 
-      },
-      { 
-        id: 'pulsed_25hz', 
-        name: 'Low Power (25Hz)', 
-        specs: { dutyCycle: 0.02, samplingRate: 'Low' }, 
-        desc: 'Extreme power saving. Signal looks "stepped". Poor motion handling.' 
       }
+      //, { 
+      //   id: 'pulsed_25hz', 
+      //   name: 'Low Power (25Hz)', 
+      //   specs: { dutyCycle: 0.02, samplingRate: 'Low' }, 
+      //   desc: 'Extreme power saving. Signal looks "stepped". Poor motion handling.' 
+      // }
     ]
   },
   DETECTORS: {
@@ -112,9 +112,9 @@ export const STAGES = {
     title: 'Battery',
     icon: Battery,
     options: [
-      { id: 'coin', name: 'Coin Cell (CR2032)', specs: { capacity: 220 }, desc: 'Non-rechargeable. Very compact.' },
-      { id: 'lipo_small', name: 'LiPo Small (150mAh)', specs: { capacity: 150 }, desc: 'Slim profile, typical for fitness bands.' },
-      { id: 'lipo_large', name: 'LiPo Large (350mAh)', specs: { capacity: 350 }, desc: 'Longer life, bulkier form factor.' }
+      { id: 'lipo_small', name: 'LiPo Small', specs: { capacity: 190 }, desc: 'Slim profile. Very compact.' },
+      { id: 'lipo_mid', name: 'LiPo Mid', specs: { capacity: 380 }, desc: 'Slim profile, typical for fitness bands.' },
+      { id: 'lipo_large', name: 'LiPo Large', specs: { capacity: 500 }, desc: 'Bulky, but longer life.' }
     ]
   }
 };
