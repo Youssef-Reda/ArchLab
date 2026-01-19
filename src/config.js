@@ -14,20 +14,20 @@ export const STAGES = {
     options: [
       { 
         id: 'oled_mono', 
-        name: 'Monochrome OLED 0.96"', 
-        specs: { width: 128, height: 64, type: 'OLED', powerConsumption: 10, cost: 5, refreshRate: 30, bitsPerPixel: 1 },
+        name: 'Monochrome OLED 0.69"', 
+        specs: { width: 64, height: 48, type: 'OLED', powerConsumption: 10, cost: 1, refreshRate: 30, bitsPerPixel: 1 },
         desc: 'Ultra-low power, high contrast, limited information density.'
       },
       { 
         id: 'tft_color', 
         name: 'TFT LCD 1.69"', 
-        specs: { width: 240, height: 280, type: 'LCD', powerConsumption: 40, cost: 8, refreshRate: 60, bitsPerPixel: 16 },
+        specs: { width: 240, height: 280, type: 'TFT LCD', powerConsumption: 40, cost: 2.55, refreshRate: 60, bitsPerPixel: 16 },
         desc: 'Standard color display, high refresh rate, requires backlight.'
       },
       { 
         id: 'amoled', 
-        name: 'AMOLED 1.4"', 
-        specs: { width: 454, height: 454, type: 'AMOLED', powerConsumption: 60, cost: 25, refreshRate: 60, bitsPerPixel: 24 },
+        name: 'Touch LCD 1.65"', 
+        specs: { width: 400, height: 400, type: 'TFT LCD', powerConsumption: 60, cost: 4.5, refreshRate: 60, bitsPerPixel: 24 },
         desc: 'Premium vibrant colors, true blacks, high power consumption.'
       }
     ]
@@ -38,7 +38,7 @@ export const STAGES = {
     icon: Droplet,
     options: [
       { id: 'green_only', name: 'Green Only (525nm)', specs: { channels: 1, power: 10 }, desc: 'Good for HR during motion. Cannot measure SpO2.' },
-      { id: 'red_ir', name: 'Red + IR (660/940nm)', specs: { channels: 2, power: 15 }, desc: 'Required for SpO2. Susceptible to motion artifacts.' },
+      { id: 'red_ir', name: 'Red + IR (630/940nm)', specs: { channels: 2, power: 15 }, desc: 'Required for SpO2. Susceptible to motion artifacts.' },
       { id: 'multi', name: 'Multi-Wavelength', specs: { channels: 3, power: 25 }, desc: 'Best of both worlds. High accuracy & SpO2 support.' }
     ]
   },  
