@@ -5,12 +5,12 @@ A real-time engineering simulation of smart watch architecture build. This proje
 ### 🔗 [Live Demo Here](https://archlab-pg.vercel.app/)
 
 ### 🛠 Engineering Concepts Demonstrated
-* **Physics Engine:** Simulates light absorption (Beer-Lambert Law) for Green (525nm), Red (660nm), and IR (940nm) wavelengths.
+* **Physics Engine:** Simulates reflective mode PPG for Green (525nm), Red (660nm), and IR (940nm) wavelengths.
 * **Signal Processing:** Implements raw noise generation, DC offset drift, and Motion Artifact simulation.
-* **DSP Algorithms:**
-    * **Basic:** 
-    * **DSP:** 
-    * **ML:** 
+* **DSP Algorithms:** Under-construction
+    * **Basic:** Under-construction
+    * **DSP:** Under-construction
+    * **ML:** Under-construction
 * **Hardware Emulation:** 
 
 ### 💻 Tech Stack
