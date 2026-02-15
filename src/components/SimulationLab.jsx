@@ -111,6 +111,8 @@ const SimulationLab = ({ config, simParams, metrics, onParamChange }) => {
     spo2: simParams?.spo2 || 98,
     noiseLevel: simParams?.noiseLevel || 0,
     motionArtifact: simParams?.motionArtifact || 0,
+    noiseLevel: 0, 
+    motionArtifact: 0,
     filterCutoff: simParams?.filterCutoff || 5
   }));
 
