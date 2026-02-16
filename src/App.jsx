@@ -11,6 +11,8 @@ import Dashboard from './components/Dashboard';
 import StageSelector from './components/StageSelector';
 import SimulationLab from './components/SimulationLab';
 
+import { Analytics } from "@vercel/analytics/next"
+
 const initialConfig = {
   display: STAGES.DISPLAY.options[0],
   emitters: STAGES.EMITTERS.options[0],
@@ -21,6 +23,7 @@ const initialConfig = {
   software: STAGES.SOFTWARE.options[0],
   battery: STAGES.BATTERY.options[0]
 };
+
 
 const App = () => {
   // State
