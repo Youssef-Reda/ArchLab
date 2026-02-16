@@ -11,7 +11,7 @@ import Dashboard from './components/Dashboard';
 import StageSelector from './components/StageSelector';
 import SimulationLab from './components/SimulationLab';
 
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 const initialConfig = {
   display: STAGES.DISPLAY.options[0],
@@ -126,6 +126,7 @@ const App = () => {
         )}
 
       </div>
+      <Analytics />
     </div>
   );
 };
